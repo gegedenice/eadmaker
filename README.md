@@ -7,7 +7,7 @@ In progress...
 
 ## Install with Docker
 
-A Docker image of the app is available in Docker hub : 
+A Docker image of the app is available in Docker hub : [https://hub.docker.com/repository/docker/smartbiblia/eadmaker](https://hub.docker.com/repository/docker/smartbiblia/eadmaker)
 
 ```
 docker pull smartbiblia/eadmaker:latest
