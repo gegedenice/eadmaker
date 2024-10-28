@@ -23,4 +23,13 @@ docker run -d --name eadmaker \
   -v <your_path>:/app/static/rico_outputs \ # ead/xml files converted in RiCo
    smartbiblia/eadmaker:latest
 ```
+## Deploy on server
+
+Example of Apache virtualhost
+
+```
+RewriteRule /eadmaker/(.*) http://localhost:5000/eadmaker/$1 [NE,P,L]
+ProxyPass /eadmaker/ http://localhost:5000/eadmaker/
+ProxyPassReverse /eadmaker/ http://localhost:5000/eadmaker/
+```
 
